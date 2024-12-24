@@ -40,7 +40,7 @@
                     index={index}
                     monthLabelHeight={monthLabelHeight}
                 />
-                {#if monthLabelHeight > 0 && isNewMonth(chunks, index)}
+                {#if monthLabelHeight > 0 && isNewMonth(chunks, index) && chunk.length}
                     <text
                         alignment-baseline="hanging"
                         fill={fontColor}

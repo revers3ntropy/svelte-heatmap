@@ -41,7 +41,7 @@ export function chunkMonths({ allowOverflow, calendar, endDate, startDate }) {
         }
 
         return acc;
-    }, []);
+    }, []).filter(month => month.length);
 }
 
 /**
@@ -74,7 +74,7 @@ export function chunkWeeks({ allowOverflow, calendar, endDate, startDate }) {
         }
 
         return acc;
-    }, []);
+    }, []).filter(week => week.length);
 }
 
 /**
